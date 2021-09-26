@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dashboard.dart';
 import 'employeeDashboard.dart';
@@ -32,6 +33,16 @@ class _LoginScreenState extends State<LoginScreen> {
                   height: 100.0,
                   child: Image.asset('images/logo.png'),
                 ),
+              ),
+              SizedBox(
+                height: 48.0,
+              ),
+
+              Container(
+                alignment:Alignment.center,
+                child:Text("Hello "+widget.role+" Please Login!",
+                style: TextStyle(fontSize:18,
+                color:Color(0xFF0A1245)),),
               ),
               SizedBox(
                 height: 48.0,
@@ -122,7 +133,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: MaterialButton(
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
-                        if (widget.role == "Admin") {
+                        if (widget.role== "Admin") {
                           Navigator.push(
                             context,
                             MaterialPageRoute(

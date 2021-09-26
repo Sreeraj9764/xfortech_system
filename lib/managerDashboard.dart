@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ManagerDashboard extends StatefulWidget {
-  const ManagerDashboard({
-    Key? key,
-  }) : super(key: key);
+  const ManagerDashboard();
 
   @override
   _ManagerDashboardState createState() => _ManagerDashboardState();
